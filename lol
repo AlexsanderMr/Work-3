@@ -33,7 +33,7 @@
     border: 1px solid;
 }
 
-main {
+.main {
     display: flex;
     align-items: center;
     height: 100px;
