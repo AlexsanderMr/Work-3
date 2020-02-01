@@ -1,63 +1,92 @@
-.block {
-    width: 50px;
-    height: 50px;
-    padding: 20px 30px;
-    justify-content: center;
-    border-radius: 50%;
-    border: 1px solid;
-}
-
-main {
-    display: flex;
-    align-items: center;
-    height: 100px;
-    flex-flow: row nowrap;
-}
-
-body {
+*{
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    height: 100vh;
-    width: 100vw;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .container {
-    margin: 0 auto;
     max-width: 1200px;
-    padding: 0 15px;
     width: 100%;
-}
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+.block{
+    display: flex;
+    justify-content:space-between;
+max-width: 100%;
 
-.block:nth-child(1) {
-    background-color: blue;
 }
-
-.block:nth-child(2) {
-    background-color: red;
+.block2{
+    display: flex;
+    justify-content:space-between;
+    max-width: 100%;
 }
-
-.block:nth-child(7) {
-    background-color: red;
+.block3{
+    display: flex;
+    flex-direction: column;
 }
+.p{
 
-.block:nth-child(5) {
-    background-color: blue;
+    width: 290px;
+height: 81px;
+font-size: 15px;
+line-height: 24px;
+color: #999999;
+font-family: "Roboto";
+font-weight: 400;
 }
+.p2{
 
-.block:nth-child(4) {
-    background-color: rgb(238, 255, 0);
+    font-size: 14px;
+color: #333333;
+font-family: "Montserrat";
+font-weight: 400;
+transform: unset;
 }
-
-.block:nth-child(8) {
-    background-color: rgb(238, 255, 0);
+.img{
+    width: 32px;
+    height: 32px;
 }
+.h3{
+    margin-top: 95px;
+    display: flex;
+    justify-content: center;
 
-.block:nth-child(3) {
-    background-color: green;
-    align-self: flex-end;
 }
+.h2{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 43px;
+}
+.line{
+    display: flex;
+    justify-content: center;
+margin-bottom: 66px;
+    width: 60px;
+    height: 2px;
+    background-color:rgb(243, 129, 129);
 
-.block:nth-child(6) {
-    background-color: green;
-    align-self: flex-end;
+
+}
+.line2{
+    display: flex;
+    justify-content: center;
+margin-bottom: 45px;
+    width: 60px;
+    height: 2px;
+    background-color:rgb(243, 129, 129);
+
+
+}
+.p3{
+    text-align:center;
+    height: 81px;
+font-size: 15px;
+line-height: 24px;
+color: #999999;
+font-family: "Roboto";
+font-weight: 400;
+margin-bottom: 95px;
+
+
 }
