@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.site-navigation {
+  display: inline-block;
+  list-style: none;
+}
+
+.site-navigation li {
+  float: left;
+  color: #f38181;
+  font-family: "Montserrat";
+  
+}
+
+.nav{
+  display: inline-block;
+  width:85%;
+  text-align:right;
+}
+.site-navigation a {
+  display: block;
+  padding: 10px;
+  font-size: 14px;
+  color: black;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.site-navigation a:hover {
+  color: rgb(0, 255, 221);
+}
+
+.site-navigation a:focus {
+  color: rgb(0, 255, 221);
+}
+.logo-text {
+  line-height: 1.5;
+  margin-left: 17%;
+  display: inline-block;
+  margin-right: 0px;
+  position: absolute;
+  width: 72px;
+  font-size: 30px;
+  color: #95e1d3;
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+
+.a
+{
+  box-sizing: border-box;
+  padding: 0;
+  margin-right: 14px;
+  font-weight:30;
+  font-size: 14px;
+  
+}
+.container {
+    max-width: 1230px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.block {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+}
+
+.block2 {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+}
+
+.block3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.p {
+    width: 290px;
+    height: 81px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #999999;
+    font-family: "Roboto";
+    font-weight: 400;
+}
+
+.p2 {
+    font-size: 14px;
+    color: #333333;
+    font-family: "Montserrat";
+    font-weight: 400;
+    transform: unset;
+}
+
+.img {
+    width: 32px;
+    height: 32px;
+}
+
+.line {
+    display: flex;
+    align-items: center;
+    margin-bottom: 66px;
+    width: 60px;
+    height: 2px;
+    background-color: rgb(243, 129, 129);
+}
+
+.line2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 45px;
+    width: 60px;
+    height: 2px;
+    background-color: rgb(243, 129, 129);
+}
+
+.p3 {
+    text-align: center;
+    height: 81px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #999999;
+    font-family: "Roboto";
+    font-weight: 400;
+    margin-bottom: 95px;
+}
+
+.h {
+    margin-top: 95px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 43px;
+}
+
+.cards {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+  }
+  
+  .card {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% / 3);
+    height: 475px;
+    position: relative;
+  }
+
+  .card:hover .card-content {
+    top: -20px;
+    left: -20px;
+  }
+  
+  .card-content {
+    object-fit: cover;
+    max-width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    transition: 0.3s ease-in-out;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .card-content .image {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .card-content > .wrapper:after {
+    display: block;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  
+    opacity: 0;
+  }
+  
+  .card-content:hover > .wrapper:after {
+    opacity: 0.5;
+  }
+  
+  .card-content > .wrapper .icon {
+    width: 10px;
+    height: 10px;
+  }
+  
+  .card-content > .wrapper .list {
+    list-style: none;
+    display: flex;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .card-content:hover > .wrapper .list {
+    opacity: 1;
+    position: relative;
+    z-index: 2;
+  }
+ 
+  .card-content > .wrapper .list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    background-color: tomato;
+    width: 55px;
+    height: 55px;
+    margin-right: 2px;
+  
+    transition: 0.3s ease-in-out;
+  }
+  
+
+  .card-content > .wrapper .list-item:hover {
+    background-color: #95e1d3;
+  }
+  
+
+  .wrapper {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+  }
+  
+  
+  .card-overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: aquamarine;
+    z-index: -1;
+  }
+  .p4{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 100px;
+     
+      flex-direction: column;
+  }
+  
